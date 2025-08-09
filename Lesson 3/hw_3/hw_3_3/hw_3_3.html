@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            position: relative;
+        }
+
+        .bg-blue {
+            background-color: lightskyblue;
+        }
+
+        .bg-green {
+            background-color: lightseagreen;
+        }
+
+        .bg-orange {
+            background-color: orange;
+        }
+
+        .scroll-down,
+        .scroll-up {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: black;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .scroll-down {
+            bottom: 20px;
+        }
+
+        .scroll-up {
+            top: 20px;
+        }
+
+        .scroll-down:hover,
+        .scroll-up:hover {
+            opacity: 0.7;
+        }
+
+        section p {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+<section id="section1" class="bg-blue">
+    <h2>Section Title</h2>
+    <p>Lorem ipsum detor sit amet, consectetur adipiscing elt. Certe nihit nisi quod possit ipsum propter se lure
+        laudari. Aperiendum est ighu quid sit voluptas: Que Manilium, ab inque M. Maximus dolor, Ingul, brevis est, Sed
+        utrum hortandus es nobis, Luci, inqut, an etiam tua sponde properus es? Duo Roges: constructio interrete. Ut in
+        geometria, prima si doderi, danda surt omnu</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elt. Certe nihit nisi quod possi ipsum propter se lure
+        laudari. Aperiendum est ighur. quid sit voluptas: Que Maniüum, ab isque M. Maximus dolor, inquit, brevis est.
+        Sod utrum hortandus es nobis, Lucl, inquit, an etiam tua</p>
+    <a href="#section2" class="scroll-down">↓</a>
+</section>
+
+<section id="section2" class="bg-green">
+    <h2>Section Title</h2>
+    <p>Lorem ipsum detor sit amet, consectetur adipiscing elt. Certe nihit nisi quod possit ipsum propter se lure
+        laudari. Aperiendum est ighu quid sit voluptas: Que Manilium, ab inque M. Maximus dolor, Ingul, brevis est, Sed
+        utrum hortandus es nobis, Luci, inqut, an etiam tua sponde properus es? Duo Roges: constructio interrete. Ut in
+        geometria, prima si doderi, danda surt omnu
+    <p/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elt. Certe nihit nisi quod possi ipsum propter se lure
+        laudari. Aperiendum est ighur. quid sit voluptas: Que Maniüum, ab isque M. Maximus dolor, inquit, brevis est.
+        Sod utrum hortandus es nobis, Lucl, inquit, an etiam tua</p>
+    <a href="#section1" class="scroll-up">↑</a>
+    <a href="#section3" class="scroll-down">↓</a>
+</section>
+
+<section id="section3" class="bg-orange">
+    <h2>Section Title</h2>
+    <p>Lorem ipsum detor sit amet, consectetur adipiscing elt. Certe nihit nisi quod possit ipsum propter se lure
+        laudari. Aperiendum est ighu quid sit voluptas: Que Manilium, ab inque M. Maximus dolor, Ingul, brevis est, Sed
+        utrum hortandus es nobis, Luci, inqut, an etiam tua sponde properus es? Duo Roges: constructio interrete. Ut in
+        geometria, prima si doderi, danda surt omnu</p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elt. Certe nihit nisi quod possi ipsum propter se lure
+        laudari. Aperiendum est ighur. quid sit voluptas: Que Maniüum, ab isque M. Maximus dolor, inquit, brevis est.
+        Sod utrum hortandus es nobis, Lucl, inquit, an etiam tua</p>
+    <a href="#section2" class="scroll-up">↑</a>
+</section>
+</body>
+</html>
